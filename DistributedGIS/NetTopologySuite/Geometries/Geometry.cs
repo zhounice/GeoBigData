@@ -125,7 +125,7 @@ namespace NetTopologySuite.Geometries
         /// <summary>
         /// An enumeration of sort values for geometries
         /// </summary>
-        protected enum SortIndexValue
+        public enum SortIndexValue
         {
             Point = 0,
             MultiPoint = 1,

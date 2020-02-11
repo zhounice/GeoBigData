@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DistributedGIS.ESRI.Extensions\DistributedGIS.ESRI.Extensions.csproj" />
+    <ProjectReference Include="..\DistributedGIS.Extensions\DistributedGIS.Extensions.csproj" />
+    <ProjectReference Include="..\DistributedGIS\DistributedGIS.csproj" />
+  </ItemGroup>
+
+</Project>
