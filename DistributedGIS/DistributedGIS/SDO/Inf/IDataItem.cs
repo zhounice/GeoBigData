@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DistributedGIS.DataSource.SDO
+namespace DistributedGIS.SDO.Inf
 {
-    public class DataSourceSDO
+    public class IDataItem
     {
     }
 }

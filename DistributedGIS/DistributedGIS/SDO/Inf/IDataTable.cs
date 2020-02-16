@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DistributedGIS.DataSource.Inf
+namespace DistributedGIS.SDO.Inf
 {
-    public interface IDataSource
+    public class IDataTable
     {
     }
 }

@@ -100,7 +100,7 @@ namespace NetTopologySuite.Geometries
         /// <summary>
         /// Gets a value to sort the geometry
         /// </summary>
-        protected override SortIndexValue SortIndex => SortIndexValue.Polygon;
+        protected override enumGeometryTypeNet SortIndex => enumGeometryTypeNet.Polygon;
 
         /// <summary>
         /// Returns a vertex of this <c>Geometry</c>

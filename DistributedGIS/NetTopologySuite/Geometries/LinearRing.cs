@@ -55,7 +55,7 @@ namespace NetTopologySuite.Geometries
         /// <summary>
         /// Gets a value to sort the geometry
         /// </summary>
-        protected override SortIndexValue SortIndex => SortIndexValue.LinearRing;
+        protected override enumGeometryTypeNet SortIndex => enumGeometryTypeNet.LinearRing;
 
         /// <summary>
         /// Returns <c>Dimensions.False</c>, since by definition LinearRings do not have a boundary.

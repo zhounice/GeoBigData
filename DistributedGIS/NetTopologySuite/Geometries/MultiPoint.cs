@@ -52,7 +52,7 @@ namespace NetTopologySuite.Geometries
         /// <summary>
         /// Gets a value to sort the geometry
         /// </summary>
-        protected override SortIndexValue SortIndex => SortIndexValue.MultiPoint;
+        protected override enumGeometryTypeNet SortIndex => enumGeometryTypeNet.MultiPoint;
 
         /// <summary>
         ///

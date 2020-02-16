@@ -31,7 +31,7 @@ namespace NetTopologySuite.Geometries
         /// <summary>
         /// Gets a value to sort the geometry
         /// </summary>
-        protected override SortIndexValue SortIndex => SortIndexValue.Point;
+        protected override enumGeometryTypeNet SortIndex => enumGeometryTypeNet.Point;
 
         /// <summary>
         ///

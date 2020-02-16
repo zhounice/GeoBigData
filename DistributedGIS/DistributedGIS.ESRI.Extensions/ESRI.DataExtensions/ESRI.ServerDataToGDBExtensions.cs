@@ -38,7 +38,7 @@ namespace DistributedGIS.ServerDataToGDBExtensions
                     break;
                 //http://192.168.1.137:6080/arcgis/rest/services/HZDG/HZDGJSFAFW/MapServer/0/query?where=1%3D1&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=OBJECTID%2CXMLB&returnGeometry=true&maxAllowableOffset=10&geometryPrecision=&outSR=&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&f=html
                 string queryResult = HttpGet(getUrl);
-                FeatureClassSDO featureClassSDO = JsonConvert.DeserializeObject<FeatureClassSDO>(queryResult);
+                //FeatureClassSDO featureClassSDO = JsonConvert.DeserializeObject<FeatureClassSDO>(queryResult);
                 JObject jObject = JObject.Parse(queryResult);
 
 

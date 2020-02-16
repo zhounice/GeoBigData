@@ -9,11 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="SDO\Inf\IDistributedDataSource.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DistributedGIS.DataSource\DistributedGIS.DataSource.csproj" />
     <ProjectReference Include="..\NetTopologySuite\NetTopologySuite.csproj" />
   </ItemGroup>
 

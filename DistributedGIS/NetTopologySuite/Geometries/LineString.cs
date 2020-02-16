@@ -72,7 +72,7 @@ namespace NetTopologySuite.Geometries
         /// <summary>
         /// Gets a value to sort the geometry
         /// </summary>
-        protected override SortIndexValue SortIndex => SortIndexValue.LineString;
+        protected override enumGeometryTypeNet SortIndex => enumGeometryTypeNet.LineString;
 
         /// <summary>
         ///
