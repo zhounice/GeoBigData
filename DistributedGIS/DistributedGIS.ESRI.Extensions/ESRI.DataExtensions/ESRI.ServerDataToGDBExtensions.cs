@@ -24,15 +24,15 @@ namespace DistributedGIS.ServerDataToGDBExtensions
             int start = 104676;
             esriGeometryType esriGeometryType = esriGeometryType.esriGeometryAny;
             ISpatialReference spatialReference = null;
-            while (true)
+            int max, min;
+            for (int i = min; i <=max; i+= FeattureNumPerRead)
             {
                 if (serverUrl[serverUrl.Length - 1] == '/')
                     getUrl = $"{serverUrl}query?";
                 else
                     getUrl = $"{serverUrl}/query?";
-                string newWhereClause = string.Format("{0}>={1} and {0}<{2}", "OBJECTID", start, start + FeattureNumPerRead);
+                string newWhereClause = string.Format("{0}>={1} and {0}<{2}", "OBJECTID", i, i + FeattureNumPerRead);
                 newWhereClause = WhereClause == "" ? newWhereClause : WhereClause + " and " + newWhereClause;
-                start += FeattureNumPerRead;
                 getUrl = $"{getUrl}where={newWhereClause}&outFields={(string.IsNullOrEmpty(OutFields) ? "*" : OutFields)}&returnGeometry=true&f=pjson";
                 if (GetFilterCount(serverUrl, newWhereClause) <= 0)
                     break;
@@ -62,6 +62,10 @@ namespace DistributedGIS.ServerDataToGDBExtensions
                     }
 
                     featureClass = CreateMemoryFeatureClass(fields, spatialReference, esriGeometryType, out workspace);
+                }
+            while (true)
+            {
+               
                 }
 
                 JArray features = jObject.Value<JArray>("features");

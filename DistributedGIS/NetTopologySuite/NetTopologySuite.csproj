@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard1.6</TargetFramework>
     <SignAssembly>true</SignAssembly>
     <NoWarn>659,168,1587</NoWarn>
     <LangVersion>7.2</LangVersion>

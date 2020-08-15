@@ -3,7 +3,9 @@ using DistributedGIS.Utils;
 using NetTopologySuite.Geometries;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Collections.Concurrent;
 using System.IO;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -13,6 +15,24 @@ namespace Test
     {
         static void Main(string[] args)
         {
+            object[] vs2 = new object[4];
+            ConcurrentQueue<int> vs = new ConcurrentQueue<int>();
+            ConcurrentBag<int> VS1 = new ConcurrentBag<int>();
+            VS1.Add(1);
+            VS1.Add(2);
+            VS1.Add(3);
+            VS1.Add(4);
+            //vs.Prepend(1);
+            //vs.Prepend(2);
+            //vs.Prepend(3);
+            //vs.Prepend(4);
+            int i;
+            VS1.TryTake(out i);
+            Console.WriteLine(i);
+            VS1.TryTake(out i);
+            Console.WriteLine(i);
+            VS1.TryTake(out i);
+            Console.WriteLine(i);
             DistributedGIS.ESRI.Extensions.LicenseUtil.CheckOutLicenseAdvanced();
             TestJsonToPolygon();
             SpatialDataObtain spatialDataObtain = new SpatialDataObtain();

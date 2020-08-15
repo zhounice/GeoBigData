@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DistributedGIS.DataSource\DistributedGIS.DataSource.csproj" />
     <ProjectReference Include="..\NetTopologySuite\NetTopologySuite.csproj" />
   </ItemGroup>
 

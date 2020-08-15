@@ -15,7 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedGIS.Extensions",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedGIS.ESRI.Extensions", "DistributedGIS.ESRI.Extensions\DistributedGIS.ESRI.Extensions.csproj", "{88A57D06-EEFD-4A62-8C30-13EEDA14B1A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedGIS.DataSource", "DistributedGIS.DataSource\DistributedGIS.DataSource.csproj", "{C7F24159-8012-4856-A220-77CC2C55EFE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DistributedGIS.DataSource", "DistributedGIS.DataSource\DistributedGIS.DataSource.csproj", "{C7F24159-8012-4856-A220-77CC2C55EFE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedGIS.GRPCClient", "DistributedGIS.GRPCClient\DistributedGIS.GRPCClient.csproj", "{F060E607-19C2-42C1-9D52-4B7D282E4671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DistributedGIS.GRPCServer", "DistributedGIS.GRPCServer\DistributedGIS.GRPCServer.csproj", "{51A586C3-F546-490D-B8CC-D0BCD35DF774}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{C7F24159-8012-4856-A220-77CC2C55EFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7F24159-8012-4856-A220-77CC2C55EFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7F24159-8012-4856-A220-77CC2C55EFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F060E607-19C2-42C1-9D52-4B7D282E4671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F060E607-19C2-42C1-9D52-4B7D282E4671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F060E607-19C2-42C1-9D52-4B7D282E4671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F060E607-19C2-42C1-9D52-4B7D282E4671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A586C3-F546-490D-B8CC-D0BCD35DF774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A586C3-F546-490D-B8CC-D0BCD35DF774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A586C3-F546-490D-B8CC-D0BCD35DF774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A586C3-F546-490D-B8CC-D0BCD35DF774}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,8 +8,4 @@
     <PackageReference Include="sqlSugar" Version="5.0.0.12" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DistributedGIS\DistributedGIS.csproj" />
-  </ItemGroup>
-
 </Project>
